@@ -1,0 +1,5 @@
+<div class="container">
+  <app-news-list *ngIf="this.service.allNews$ | async as allNews" [allNews]="allNews">
+
+  </app-news-list>
+</div>

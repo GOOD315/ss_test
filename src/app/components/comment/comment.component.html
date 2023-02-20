@@ -1,0 +1,7 @@
+<div class="comment">
+  <hr>
+  <div class="comment-header"> {{comment.author}} {{comment.created_at | date:'MMM d, y'}}</div>
+  <div class="comment-body"><div [innerHTML]="comment.text"></div> </div>
+
+  <app-comment *ngFor="let comment of comment.children" [comment]="comment"></app-comment>
+</div>

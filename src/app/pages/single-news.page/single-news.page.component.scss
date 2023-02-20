@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+  width: 70%;
+  background-color: rgb(246, 246, 239);
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(255, 102, 0);
+  margin-bottom: 20px;
+}
+
+.card {
+  margin: 20px;
+}
+
+.card-body {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+// я тут местами захардкодил, можно было все намного красивее сделать, просто времени не очень много

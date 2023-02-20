@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="header">
+    <h2> это header ^_^</h2>
+  </div>
+
+  <mat-card class="card">
+    <mat-card-subtitle>
+      <button mat-button (click)="onMainPage()">На главную</button>
+      <button mat-button *ngIf="links.prev" (click)="onPrev()">Назад</button>
+      <button mat-button *ngIf="links.next" (click)="onNext()">Вперед</button>
+    </mat-card-subtitle>
+
+    <div class="card-body">
+      <mat-card-title>
+        {{this.service.singleNews?.title}}
+      </mat-card-title>
+
+      <div [innerHTML]="this.service.singleNews?.text"></div>
+
+    </div>
+    <app-comment *ngFor="let comment of this.service.singleNews?.children" [comment]="comment"></app-comment>
+  </mat-card>
+</div>
